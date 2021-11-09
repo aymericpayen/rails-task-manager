@@ -1,0 +1,8 @@
+<h1>INDEX</h1>
+<ol>Task List
+<%@tasks.each do |task|  %>
+<div class="d-flex justify-content-start">
+  <li><%= link_to task.title, task_path(task.id)%></li>
+</div>
+<% end %>
+</ol>
